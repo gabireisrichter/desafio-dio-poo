@@ -10,12 +10,12 @@ public class Main {
         Cursos curso1 = new Cursos();
         curso1.setTitulo("curso java");
         curso1.setDescricao("descrição curso java");
-        curso1.setCargaHoraria(10);
+        curso1.setCargaHoraria(8);
 
         Cursos curso2 = new Cursos();
         curso2.setTitulo("curso js");
         curso2.setDescricao("descrição curso javascript");
-        curso2.setCargaHoraria(8);
+        curso2.setCargaHoraria(4);
 
         Mentorias mentorias = new Mentorias();
         mentorias.setTitulo("mentoria java");
@@ -42,16 +42,16 @@ public class Main {
 
         System.out.println("-----------");
 
-        Devs devDenys = new Devs();
-        devDenys.setNome("Denys");
-        devDenys.inscreverBootcamp(bootcamp);
-        System.out.println("Conteudos Inscritos Denys: " + devDenys.getConteudosInscritos());
-        devDenys.progredir();
-        devDenys.progredir();
-        devDenys.progredir();
+        Devs devJoao = new Devs();
+        devJoao.setNome("Denys");
+        devJoao.inscreverBootcamp(bootcamp);
+        System.out.println("Conteudos Inscritos Denys: " + devJoao.getConteudosInscritos());
+        devJoao.progredir();
+        devJoao.progredir();
+        devJoao.progredir();
         System.out.println("-");
-        System.out.println("Conteudos Inscritos Denys: " + devDenys.getConteudosInscritos());
-        System.out.println("Conteudos Concluidos Denys: " + devDenys.getConteudosConcluidos());
-        System.out.println("XP:" + devDenys.calcularTotalXP());
+        System.out.println("Conteudos Inscritos Denys: " + devJoao.getConteudosInscritos());
+        System.out.println("Conteudos Concluidos Denys: " + devJoao.getConteudosConcluidos());
+        System.out.println("XP:" + devJoao.calcularTotalXP());
     }
 }
